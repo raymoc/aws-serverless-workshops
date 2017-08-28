@@ -57,13 +57,13 @@ Set the destination stream of the application to **wildrydes-aggregated**.
 1. Run the producer to start emiting sensor data to the stream. Replace **YOUR\_REGION\_HERE** with your Region. For example, if you've created the stream in US West (Oregon), you'd replace the placeholder with us-west-2.
 
 	```console
-	./producer -region YOUR_REGION_HERE
+	./producer -region YOUR_REGION_HERE -stream YOUR_STREAM_HERE
 	```
 
 	The producer emits a message a second to the stream and prints a period to the screen.
 
 	```console
-	$ ./producer -region us-east-1
+	$ ./producer -region us-east-1 -stream wildrydes-aggregated
 	..................................................
 	```
 
