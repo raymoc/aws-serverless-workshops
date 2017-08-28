@@ -70,7 +70,7 @@ Use the command-line producer for macOS, Linux, or Windows to produce messages i
 1. Run the consumer to start reading sensor data from the stream. Replace **YOUR\_REGION\_HERE** with your Region. For example, if you've created the stream in US West (Oregon), you'd replace the placeholder with us-west-2.
 
 	```console
-	./consumer -region YOUR_REGION_HERE
+	./consumer -region YOUR_REGION_HERE -stream YOUR_STREAM_HERE
 	```
 
 	The consumer will print the messages being sent by the producer:
@@ -105,7 +105,7 @@ Use the command-line producer for macOS, Linux, or Windows to produce messages i
 	1. Start another instance of the producer in another tab or console. Provide a specific unicorn name and notice data points for both unicorns in consumer's output:
 
 		```console
-		./producer -region YOUR_REGION_HERE -name Bucephalus
+		./producer -region YOUR_REGION_HERE -stream YOUR_STREAM_HERE -name Bucephalus
 		```
 
 After you've finished experimenting with the producer, you can move onto the next module: [Streaming Aggregation][streaming-aggregation-module].
